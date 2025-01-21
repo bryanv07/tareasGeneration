@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Contactanos</h1>
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <fieldset>
+                    <legend>Datos basicos </legend>
+                    Nombre: <input type="text" placeholder="Pedro" required> <br>
+                    <!--placeholder pone un ejemplo en el input -->
+                    <!--Required hace el campo requerido en el formulario-->
+                    Apellidos: <input type="text">
+                    <!--input es una etiqueta de linea-->
+                    <!-- Input deja la entrada y el tipo de entrada se recibe dependiendo del tipo de input-->
+                    Correo electronico: <input type="email" placeholder="hola@gmail.com" required>
+                    Telefono: <input type="tel" placeholder="555-555-555">
+                </fieldset>
+                <fieldset>
+                    <legend>Datos del pedido</legend>
+                    <span>El numero minimo de tamales para hacer un pedido es de:</span>
+                    Numero de tamales<input type="number" min="20" max="300">
+                    Fecha de entrega: <input type="date">
+                </fieldset>
+                <fieldset>
+                    <legend>Datos del envio</legend>
+                    <input type="radio" name="tipo-de-envio"> Recoger en sucursal
+                    <input type="radio" name="tipo-de-envio"> Envio a domicilio
+                    <input type="radio" name="tipo-de-envio"> Delivery
+                    <input type="radio" name="tipo-de-envio"> Punto medio
+                    <!--Para que entre un grupo de ratios solo se pueda escoger uno deben tener el mismo name, esto implica que pertenecen al mismo grupo de seleccion-->
+                    <label for="recoger-en-sucursal">
+                        <input id="recoger-en-sucursal" type="radio" name="hjol"> Radio de un grupo distinto
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos del envio</legend>
+                    <select name="sucursales">
+                        <option value=""> Sucursal Coyoacán </option>
+                        <option value=""> Sucursal Ermita </option>
+                        <option value=""> Sucursal Insurgentes </option>
+                        <option value=""> Sucursal Oriente </option>
+                        <option value=""> Sucursal Centro </option>
+                        <option value=""> Sucursal Neza </option>
+                        <option value=""> Sucursal Ecatepec </option>
+                    </select>
+                    <input list="sucursal">
+                <datalist id="sucursal">
+                    <option value="xochimilco">Xochimilco</option>
+                    <option value="xochimilco">Xochimilco</option>
+                    <option value="xochimilco">Xochimilco</option>
+                    <option value="xochimilco">Xochimilco</option>
+                </datalist>
+                    <input type="checkbox">Acepto terminos y condicionessssssss
+                </fieldset>
+                <input type="submit">
+                <button>Enviar ya</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
